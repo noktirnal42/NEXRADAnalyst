@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noktirnal42.github.io/NEXRADAnalyst/sitemap.xml

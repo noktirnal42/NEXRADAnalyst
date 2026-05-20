@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEXRAD Analyst Privacy Policy</title>
+    <meta name="description" content="Privacy policy for NEXRAD Analyst weather radar application.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span>NEXRAD Analyst</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#features">Features</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="legal-main">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: May 20, 2026</p>
+
+      <section class="legal-section">
+        <h2>Overview</h2>
+        <p>NEXRAD Analyst is a native macOS application that processes publicly available weather radar data. The app stores your preferences, favorite radar sites, session history, and settings locally on your Mac using SwiftData. No user account is required to use the app.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Data We Do Not Collect</h2>
+        <p>NEXRAD Analyst does not collect personal information, usage analytics, advertising identifiers, or tracking data. We do not operate user-tracking systems, sell data, or collect payment information. All purchases are processed through the Mac App Store using Apple's payment infrastructure.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Data Stored on Your Device</h2>
+        <p>The following data is stored locally on your Mac and never transmitted to us:</p>
+        <ul>
+          <li>Favorite radar sites and recent session history</li>
+          <li>User preferences (default site, display layout, overlay settings, storm motion configuration)</li>
+          <li>Cached radar data files (managed automatically, up to 500 MB)</li>
+          <li>Subscription and purchase state (managed by StoreKit)</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>Network Requests</h2>
+        <p>NEXRAD Analyst connects to the following public services to retrieve weather data:</p>
+        <ul>
+          <li><strong>NOAA / NWS (api.weather.gov)</strong> — Current weather observations, NWS warnings, and METAR station data</li>
+          <li><strong>AWS S3 (noaa-nexrad-level2-s3.amazonaws.com)</strong> — NEXRAD Level II radar archive data</li>
+          <li><strong>University of Wyoming (weather.uwyo.edu)</strong> — Upper-air sounding data for atmospheric profiles</li>
+        </ul>
+        <p>These requests include a standard User-Agent header identifying the application. No personal information, device identifiers, or tracking data is included in network requests.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Apple Services</h2>
+        <p>NEXRAD Analyst uses the following Apple platform services, each governed by Apple's own privacy policies:</p>
+        <ul>
+          <li><strong>WeatherKit</strong> — Surface weather conditions and forecasts for radar site locations</li>
+          <li><strong>StoreKit</strong> — Subscription and in-app purchase management</li>
+          <li><strong>CoreSpotlight</strong> — On-device search indexing for radar sites (data stays on your Mac)</li>
+          <li><strong>Apple Foundation Models</strong> — On-device AI weather analysis (all processing happens locally, no data is sent to Apple servers)</li>
+          <li><strong>CoreML</strong> — On-device storm cell classification (all processing happens locally)</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>Location Data</h2>
+        <p>NEXRAD Analyst uses radar site coordinates (publicly available data from the NWS) for map display and distance calculations. The app does not request or use your device's location services.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>TestFlight</h2>
+        <p>If you install NEXRAD Analyst through TestFlight, Apple may collect crash logs, diagnostics, and beta feedback according to Apple's TestFlight and App Store privacy practices.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Children's Privacy</h2>
+        <p>NEXRAD Analyst does not knowingly collect personal information from children. The app does not require account creation and does not collect any personal data.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Changes to This Policy</h2>
+        <p>If we update this privacy policy, the updated version will be posted on this page with a revised date. Material changes will be noted in app update release notes.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Contact</h2>
+        <p>For privacy questions, visit our <a href="support.html">support page</a> or contact us at <a href="mailto:FreeRangeLabs@drumnbus.com">FreeRangeLabs@drumnbus.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 Free Range Labs. NEXRAD Analyst is not affiliated with the National Weather Service, NOAA, or Apple Inc.</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
