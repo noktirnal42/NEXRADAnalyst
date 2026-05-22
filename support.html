@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEXRAD Analyst Support</title>
-    <meta name="description" content="Help, instructions, and support for NEXRAD Analyst weather radar application.">
+    <title>Support — NEXRAD Analyst Pro</title>
+    <meta name="description" content="Help, instructions, keyboard shortcuts, and support resources for NEXRAD Analyst Pro weather radar application.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="index.html">
-          <span>NEXRAD Analyst</span>
+          <img src="app-icon.png" alt="NEXRAD Analyst Pro icon" width="30" height="30">
+          <span>NEXRAD Analyst Pro</span>
         </a>
         <div class="nav-links">
           <a href="index.html#features">Features</a>
@@ -23,7 +26,7 @@
 
     <main class="legal-main">
       <h1>Support</h1>
-      <p>Find help, instructions, and support resources for NEXRAD Analyst.</p>
+      <p>Find help, instructions, and support resources for NEXRAD Analyst Pro.</p>
 
       <!-- Getting Started -->
       <section class="legal-section">
@@ -32,12 +35,12 @@
           <div class="support-card">
             <div class="step-number">1</div>
             <h3>Select a Radar Site</h3>
-            <p>Click the site selector in the toolbar to browse 160+ NEXRAD radar sites. Search by site ID (e.g., KTLX), city name, or state. Star your favorites for quick access.</p>
+            <p>Press <kbd>&#x2318;L</kbd> or click the site selector in the toolbar to browse 160+ NEXRAD radar sites. Search by site ID (e.g., KTLX), city name, or state. Star your favorites for quick access.</p>
           </div>
           <div class="support-card">
             <div class="step-number">2</div>
             <h3>Choose a Product</h3>
-            <p>Use the product picker to switch between reflectivity, velocity, storm-relative velocity, spectrum width, and dual-polarization products (ZDR, &rho;HV, KDP, &Phi;DP).</p>
+            <p>Use <kbd>&#x2318;1</kbd>&ndash;<kbd>&#x2318;8</kbd> or the product picker to switch between reflectivity, velocity, storm-relative velocity, spectrum width, and dual-pol products (ZDR, &rho;HV, KDP, &Phi;DP).</p>
           </div>
           <div class="support-card">
             <div class="step-number">3</div>
@@ -53,23 +56,23 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>Multi-Pane Display</h3>
-            <p>View up to four radar products simultaneously with synced map navigation. Use the layout picker in the toolbar to switch between 1-up, 2-up, and 4-up views. Each pane can display a different product while maintaining synchronized pan and zoom. Requires Pro subscription.</p>
+            <p>View up to four radar products simultaneously with synced map navigation. Use <kbd>&#x2318;&#x2303;1</kbd>&ndash;<kbd>&#x2318;&#x2303;3</kbd> or the layout picker in the toolbar to switch between 1-up, 2-up, and 4-up views. Each pane can display a different product while maintaining synchronized pan and zoom. <em>Requires Pro.</em></p>
           </div>
           <div class="faq-item">
             <h3>3D Volume Rendering</h3>
-            <p>Toggle the 3D view from the toolbar to see a Metal-accelerated volumetric rendering of the entire radar volume. Click and drag to rotate, scroll to zoom. The performance overlay shows FPS and render time. Requires Pro subscription.</p>
+            <p>Press <kbd>&#x2318;&#x2325;3</kbd> or toggle the 3D view from the toolbar to see a Metal-accelerated volumetric rendering of the entire radar volume. Click and drag to rotate, scroll to zoom. The performance overlay shows FPS and render time. <em>Requires Pro.</em></p>
           </div>
           <div class="faq-item">
             <h3>Storm-Relative Velocity (SRM)</h3>
-            <p>Enable SRM from the toolbar to subtract storm motion from velocity data, making rotation signatures easier to identify. Click the storm motion editor to set direction and speed based on storm movement. Requires Pro subscription.</p>
+            <p>Enable SRM from the toolbar to subtract storm motion from velocity data, making rotation signatures easier to identify. Use the storm motion editor to set direction and speed based on storm movement. <em>Requires Pro.</em></p>
           </div>
           <div class="faq-item">
             <h3>Inspector Panel</h3>
-            <p>Open the inspector from the toolbar to view hodograph wind profiles, atmospheric soundings (fetched from radiosonde data), and detailed volume scan information including VCP, elevation angles, and coordinates. Requires Pro subscription.</p>
+            <p>Press <kbd>&#x2318;&#x2325;I</kbd> to open the inspector panel with hodograph wind profiles, atmospheric soundings (from real radiosonde data), and detailed volume scan information including VCP, elevation angles, and coordinates. <em>Requires Pro.</em></p>
           </div>
           <div class="faq-item">
             <h3>NWS Warning Overlays</h3>
-            <p>Toggle warning polygons from the toolbar to see active National Weather Service warnings. Tornado warnings appear in red, severe thunderstorm in orange, flash flood in green, and special weather statements in yellow.</p>
+            <p>Toggle warning polygons with <kbd>&#x2318;&#x21E7;W</kbd> to see active National Weather Service warnings. Tornado warnings appear in red, severe thunderstorm in orange, flash flood in green, and special weather statements in yellow.</p>
           </div>
           <div class="faq-item">
             <h3>METAR Surface Observations</h3>
@@ -77,19 +80,60 @@
           </div>
           <div class="faq-item">
             <h3>Playback &amp; Timeline</h3>
-            <p>Use the timeline scrubber at the bottom of the display to step through recent volume scans. Use the play button for animated playback, or step forward/backward through individual frames.</p>
+            <p>Press <kbd>Space</kbd> to play/pause, or <kbd>&#x2318;&#x2190;</kbd>/<kbd>&#x2318;&#x2192;</kbd> to step through recent volume scans. Use the timeline scrubber at the bottom of the display for direct frame navigation.</p>
           </div>
           <div class="faq-item">
             <h3>AI Weather Analysis</h3>
-            <p>Use the AI analysis button in the toolbar to generate an on-device weather situation summary. The analysis includes current conditions assessment, threat level, and safety recommendations. Requires ML Analysis Pack.</p>
+            <p>Use the AI analysis button in the toolbar to generate an on-device weather situation summary with threat assessment and safety recommendations. Analysis runs locally using Core ML, Apple Foundation Models where available, or a rule-based fallback. <em>Requires ML Analysis Pack.</em></p>
           </div>
           <div class="faq-item">
-            <h3>Siri Shortcuts</h3>
-            <p>NEXRAD Analyst supports Siri Shortcuts for loading radar sites and switching products. Add shortcuts through the Shortcuts app on macOS to quickly access your most-used radar sites by voice.</p>
+            <h3>Lightning &amp; Model Data Overlays</h3>
+            <p>Toggle real-time lightning strikes and numerical weather prediction model data (HRRR, RAP, NAM, GFS) onto the radar display for comprehensive situational awareness. <em>Requires Storm Chaser Pack.</em></p>
           </div>
           <div class="faq-item">
-            <h3>Drag &amp; Drop</h3>
-            <p>Drag NEXRAD Level II archive files (.ar2v) directly onto the application window to load them. You can also drag radar snapshots out of the app to share them.</p>
+            <h3>SharePlay</h3>
+            <p>Collaborate on storm analysis in real time during FaceTime calls. Shared radar views, product selections, and synchronized cursor positions keep your team on the same page.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keyboard Shortcuts -->
+      <section class="legal-section">
+        <h2>Keyboard Shortcuts</h2>
+        <div class="shortcuts-grid">
+          <div class="shortcut-group">
+            <h3>Radar</h3>
+            <table class="shortcut-table">
+              <tr><td><kbd>&#x2318;L</kbd></td><td>Open site picker</td></tr>
+              <tr><td><kbd>&#x2318;R</kbd></td><td>Refresh radar data</td></tr>
+              <tr><td><kbd>&#x2318;1</kbd>&ndash;<kbd>&#x2318;8</kbd></td><td>Switch product</td></tr>
+            </table>
+          </div>
+          <div class="shortcut-group">
+            <h3>Overlays</h3>
+            <table class="shortcut-table">
+              <tr><td><kbd>&#x2318;&#x21E7;W</kbd></td><td>Toggle NWS warnings</td></tr>
+              <tr><td><kbd>&#x2318;&#x21E7;G</kbd></td><td>Toggle range rings</td></tr>
+              <tr><td><kbd>&#x2318;&#x21E7;T</kbd></td><td>Toggle METAR stations</td></tr>
+              <tr><td><kbd>&#x2318;&#x21E7;L</kbd></td><td>Toggle lightning</td></tr>
+              <tr><td><kbd>&#x2318;&#x21E7;D</kbd></td><td>Toggle model data</td></tr>
+            </table>
+          </div>
+          <div class="shortcut-group">
+            <h3>View</h3>
+            <table class="shortcut-table">
+              <tr><td><kbd>&#x2318;&#x2303;1</kbd>&ndash;<kbd>&#x2318;&#x2303;3</kbd></td><td>Change layout</td></tr>
+              <tr><td><kbd>&#x2318;&#x2325;I</kbd></td><td>Toggle inspector</td></tr>
+              <tr><td><kbd>&#x2318;&#x2325;3</kbd></td><td>Toggle 3D view</td></tr>
+            </table>
+          </div>
+          <div class="shortcut-group">
+            <h3>Playback</h3>
+            <table class="shortcut-table">
+              <tr><td><kbd>Space</kbd></td><td>Play / Pause</td></tr>
+              <tr><td><kbd>&#x2318;&#x2190;</kbd></td><td>Previous frame</td></tr>
+              <tr><td><kbd>&#x2318;&#x2192;</kbd></td><td>Next frame</td></tr>
+            </table>
           </div>
         </div>
       </section>
@@ -100,19 +144,23 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>Radar data is not loading</h3>
-            <p>NEXRAD Analyst requires an internet connection to fetch radar data from NOAA and AWS. Check your network connection and try clicking the refresh button. If a specific site is unavailable, the radar may be undergoing maintenance.</p>
+            <p>NEXRAD Analyst Pro requires an internet connection to fetch radar data from NOAA and AWS. Check your network connection and press <kbd>&#x2318;R</kbd> to refresh. If a specific site is unavailable, the radar may be undergoing maintenance.</p>
           </div>
           <div class="faq-item">
             <h3>3D rendering performance is slow</h3>
-            <p>3D volume rendering uses Metal GPU acceleration. Performance depends on your GPU. Close other GPU-intensive applications and try reducing the window size. Apple silicon Macs provide the best rendering performance.</p>
+            <p>3D volume rendering uses Metal GPU acceleration. Performance depends on your GPU. Close other GPU-intensive applications and try reducing the window size. Apple silicon Macs provide the best rendering performance. The app supports MetalFX upscaling for improved performance.</p>
           </div>
           <div class="faq-item">
             <h3>METAR data is missing for some stations</h3>
-            <p>METAR observations are fetched from the NWS API and depend on station reporting. Not all stations near a radar site may have current observations available. Observations update approximately every hour.</p>
+            <p>METAR observations are fetched from the NWS API and depend on station reporting. Not all stations near a radar site may have current observations. Observations update approximately every hour.</p>
           </div>
           <div class="faq-item">
             <h3>How do I restore my purchase?</h3>
-            <p>Open NEXRAD Analyst, go to the Pro subscription view (Pro badge in toolbar), and tap "Restore Purchases." Your subscriptions and purchases sync automatically through your Apple ID.</p>
+            <p>Open NEXRAD Analyst Pro, go to the subscription view (Pro badge in toolbar), and click "Restore Purchases." Your subscriptions and in-app purchases sync automatically through your Apple ID.</p>
+          </div>
+          <div class="faq-item">
+            <h3>AI analysis is not available</h3>
+            <p>On-device AI weather analysis uses Apple Foundation Models on supported macOS releases. On macOS 15, a rule-based analysis engine provides threat assessment and safety recommendations as a fallback. The ML Analysis Pack is required for this feature.</p>
           </div>
         </div>
       </section>
@@ -130,7 +178,7 @@
       <!-- TestFlight -->
       <section class="legal-section" id="testflight">
         <h2>TestFlight Feedback</h2>
-        <p>If you are testing NEXRAD Analyst through TestFlight, you can send beta feedback directly through the TestFlight app. Please include your macOS version, the NEXRAD Analyst build number, what you expected to happen, and what actually happened.</p>
+        <p>If you are testing NEXRAD Analyst Pro through TestFlight, you can send beta feedback directly through the TestFlight app. Please include your macOS version, the build number (visible in the title bar), what you expected to happen, and what actually happened.</p>
       </section>
 
       <!-- Email (last resort) -->
@@ -146,20 +194,21 @@
       <section class="legal-section">
         <h2>App Details</h2>
         <ul>
-          <li>App name: NEXRAD Analyst</li>
-          <li>Platform: macOS 15 Sequoia or later</li>
-          <li>Bundle ID: com.jeremymcvay.NEXRADAnalyst</li>
-          <li>Developer: Free Range Labs</li>
+          <li><strong>App name:</strong> NEXRAD Analyst Pro</li>
+          <li><strong>Platform:</strong> macOS 15 Sequoia or later</li>
+          <li><strong>Bundle ID:</strong> com.jeremymcvay.NEXRADAnalyst</li>
+          <li><strong>Developer:</strong> Free Range Labs</li>
         </ul>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span>&copy; 2026 Free Range Labs. NEXRAD Analyst is not affiliated with the National Weather Service, NOAA, or Apple Inc.</span>
+        <span>&copy; 2026 Free Range Labs. NEXRAD Analyst Pro is not affiliated with the National Weather Service, NOAA, or Apple Inc.</span>
         <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
         </div>
       </div>
     </footer>

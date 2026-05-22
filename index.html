@@ -3,24 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEXRAD Analyst - Professional Weather Radar for Mac</title>
-    <meta name="description" content="NEXRAD Analyst is a native macOS weather radar analysis application featuring Level II data, multi-pane display, 3D volume rendering, storm-relative velocity, and AI-powered weather analysis.">
-    <meta property="og:title" content="NEXRAD Analyst">
+    <title>NEXRAD Analyst Pro — Professional Weather Radar for Mac</title>
+    <meta name="description" content="NEXRAD Analyst Pro is a native macOS weather radar application featuring NEXRAD Level II data, multi-pane display, Metal-accelerated 3D volume rendering, storm-relative velocity, and on-device AI weather analysis.">
+    <meta property="og:title" content="NEXRAD Analyst Pro — Professional Weather Radar for Mac">
     <meta property="og:description" content="Professional NEXRAD Level II weather radar analysis for macOS. Multi-pane display, 3D rendering, storm tracking, and on-device AI analysis.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noktirnal42.github.io/NEXRADAnalyst/">
+    <meta property="og:image" content="https://noktirnal42.github.io/NEXRADAnalyst/app-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="index.html">
-          <span>NEXRAD Analyst</span>
+          <img src="app-icon.png" alt="NEXRAD Analyst Pro icon" width="30" height="30">
+          <span>NEXRAD Analyst Pro</span>
         </a>
         <div class="nav-links">
           <a href="#features">Features</a>
-          <a href="#products">Products</a>
-          <a href="#availability">Availability</a>
+          <a href="#plans">Plans</a>
           <a href="support.html">Support</a>
           <a href="privacy.html">Privacy</a>
         </div>
@@ -32,14 +35,14 @@
         <div class="hero-inner hero-grid">
           <div class="hero-content">
             <p class="eyebrow">Professional weather radar for macOS</p>
-            <h1>NEXRAD Analyst</h1>
+            <h1>NEXRAD Analyst Pro</h1>
             <p class="hero-title-sub">See the storm. Understand the data.</p>
             <p class="hero-copy">A native Mac application for analyzing NEXRAD Level II weather radar data with multi-pane display, Metal-accelerated 3D volume rendering, storm-relative velocity, real-time NWS warnings, and on-device AI weather analysis.</p>
             <div class="cta-row">
               <a class="primary-button" href="#features">Explore Features</a>
               <a class="secondary-button" href="support.html">Get Support</a>
             </div>
-            <p class="note">NEXRAD Analyst is being prepared for Mac App Store distribution. This site provides product information, support, and privacy details.</p>
+            <p class="note">Requires macOS 15 Sequoia or later. Designed for Apple silicon and Intel Macs.</p>
           </div>
           <div class="radar-visual" aria-label="Animated radar sweep visualization">
             <div class="radar-ring radar-ring-1"></div>
@@ -60,98 +63,190 @@
       <section class="section" id="features">
         <div class="section-inner">
           <h2>Built for analysis.</h2>
-          <p class="section-lede">NEXRAD Analyst brings professional-grade radar analysis tools to the Mac, powered by Apple technologies and designed for meteorologists, storm chasers, and weather enthusiasts.</p>
+          <p class="section-lede">NEXRAD Analyst Pro brings professional-grade radar tools to the Mac, powered by Apple technologies and designed for meteorologists, storm chasers, and weather enthusiasts.</p>
           <div class="feature-grid">
             <article class="feature">
-              <span class="feature-icon">📡</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F4E1;</span>
               <h3>Level II Data</h3>
-              <p>Direct access to NEXRAD Level II base data from 160+ radar sites across the US, streamed from NOAA and AWS archives.</p>
+              <p>Direct access to NEXRAD Level II base data from 160+ WSR-88D radar sites across the US, streamed from NOAA and AWS archives.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">🖥️</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F5A5;</span>
               <h3>Multi-Pane Display</h3>
               <p>Analyze multiple products simultaneously with synced 1-up, 2-up, and 4-up pane layouts on a single map view.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">🌀</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F300;</span>
               <h3>3D Volume Rendering</h3>
-              <p>Metal-accelerated GPU ray-casting transforms volumetric radar data into interactive 3D storm visualizations at 60fps.</p>
+              <p>Metal-accelerated GPU ray-casting transforms volumetric radar data into interactive 3D storm visualizations at 60 fps.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">💨</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F4A8;</span>
               <h3>Storm-Relative Velocity</h3>
               <p>Configurable storm motion vectors for SRM analysis, revealing rotation signatures hidden in base velocity data.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">⚠️</span>
+              <span class="feature-icon" aria-hidden="true">&#x26A0;</span>
               <h3>Live NWS Warnings</h3>
-              <p>Real-time warning polygons from the National Weather Service color-coded by severity, with critical tornado alert notifications.</p>
+              <p>Real-time warning polygons from the National Weather Service, color-coded by severity with local severe-weather notifications.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">🤖</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F916;</span>
               <h3>AI Weather Analysis</h3>
-              <p>On-device weather situation analysis using Apple Foundation Models, with threat assessment and safety recommendations.</p>
+              <p>Optional on-device weather situation analysis using Core ML and Apple Foundation Models where available, with rule-based fallback on supported macOS releases.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">📊</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F4CA;</span>
               <h3>Inspector Panel</h3>
-              <p>Hodograph wind profiles, atmospheric soundings, and detailed volume scan information in a dedicated analysis sidebar.</p>
+              <p>Hodograph wind profiles, atmospheric soundings from radiosonde data, and detailed volume scan information in a dedicated sidebar.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">🗺️</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F5FA;</span>
               <h3>METAR Observations</h3>
               <p>Surface weather station plots with standard meteorological station model display including wind barbs, sky cover, and conditions.</p>
             </article>
             <article class="feature">
-              <span class="feature-icon">🔬</span>
+              <span class="feature-icon" aria-hidden="true">&#x1F52C;</span>
               <h3>Derived Products</h3>
               <p>Echo tops, VIL, MEHS, POSH, and spectrum width analysis computed from full-volume radar data.</p>
             </article>
           </div>
-        </div>
-      </section>
 
-      <section class="section alt" id="products">
-        <div class="section-inner">
-          <h2>Choose your plan.</h2>
-          <p class="section-lede">NEXRAD Analyst offers a free tier for basic radar viewing, with Pro subscriptions and add-on packs for advanced analysis features.</p>
-          <div class="product-grid">
-            <div class="product-card">
-              <h3>Free</h3>
-              <p class="price">$0</p>
-              <p>Basic reflectivity viewing with a single-pane display. No account required.</p>
-            </div>
-            <div class="product-card">
-              <h3>Pro Monthly</h3>
-              <p class="price">$4.99/mo</p>
-              <p>All products, multi-pane display, 3D rendering, storm-relative velocity, inspector panel, and more. Includes a 1-week free trial.</p>
-            </div>
-            <div class="product-card">
-              <h3>Pro Annual</h3>
-              <p class="price">$29.99/yr</p>
-              <p>All Pro features at a 50% discount. Includes a 2-week free trial.</p>
-            </div>
-            <div class="product-card">
-              <h3>Pro Lifetime</h3>
-              <p class="price">$49.99</p>
-              <p>One-time purchase unlocking all Pro features forever, including future updates.</p>
+          <div class="feature-extras">
+            <div class="feature-extra-grid">
+              <div class="feature-extra">
+                <strong>Keyboard Shortcuts</strong>
+                <p>Full keyboard-driven workflow with shortcuts for site selection, products, overlays, layouts, playback, and more.</p>
+              </div>
+              <div class="feature-extra">
+                <strong>Siri Shortcuts</strong>
+                <p>Load your favorite radar sites and switch products by voice using Siri on macOS.</p>
+              </div>
+              <div class="feature-extra">
+                <strong>Drag &amp; Drop</strong>
+                <p>Import NEXRAD Level II archive files (.ar2v) by dragging them onto the window. Export radar snapshots as PNG.</p>
+              </div>
+              <div class="feature-extra">
+                <strong>Spotlight Search</strong>
+                <p>Find any of 160+ radar sites directly from macOS Spotlight without opening the app.</p>
+              </div>
+              <div class="feature-extra">
+                <strong>SharePlay</strong>
+                <p>Collaborate on storm analysis in real time with shared radar views and synchronized cursors via FaceTime.</p>
+              </div>
+              <div class="feature-extra">
+                <strong>WeatherKit Integration</strong>
+                <p>Current surface conditions, hourly forecasts, and severe weather alerts overlaid directly on the radar display.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="availability">
+      <section class="section alt" id="plans">
         <div class="section-inner">
-          <h2>Availability</h2>
-          <p class="section-lede">NEXRAD Analyst is a native macOS application requiring macOS 15 Sequoia or later. Designed for Apple silicon and Intel Macs.</p>
+          <h2>Choose your plan.</h2>
+          <p class="section-lede">Start with free single-pane reflectivity viewing. Unlock the full analysis suite with a Pro subscription, and add specialized packs for severe weather and ML capabilities.</p>
+
+          <h3 class="plans-group-heading">Subscriptions</h3>
+          <div class="product-grid four-col">
+            <div class="product-card">
+              <h3>Free</h3>
+              <p class="price">$0</p>
+              <ul class="plan-features">
+                <li>Base reflectivity viewing</li>
+                <li>Single-pane display</li>
+                <li>NWS warning polygons</li>
+                <li>160+ radar site selection</li>
+              </ul>
+              <p class="plan-note">No account required</p>
+            </div>
+            <div class="product-card featured">
+              <div class="card-badge">Most Popular</div>
+              <h3>Pro Monthly</h3>
+              <p class="price">$4.99<span class="price-period">/mo</span></p>
+              <ul class="plan-features">
+                <li>All 8 radar products</li>
+                <li>Multi-pane display (2-up, 4-up)</li>
+                <li>3D volume rendering</li>
+                <li>Storm-relative velocity</li>
+                <li>Inspector panel with soundings</li>
+                <li>Playback &amp; timeline</li>
+                <li>METAR station overlays</li>
+              </ul>
+              <p class="plan-note">Includes 1-week free trial</p>
+            </div>
+            <div class="product-card">
+              <div class="card-badge savings">Save 50%</div>
+              <h3>Pro Annual</h3>
+              <p class="price">$29.99<span class="price-period">/yr</span></p>
+              <ul class="plan-features">
+                <li>Everything in Pro Monthly</li>
+                <li>Best value for ongoing analysis</li>
+              </ul>
+              <p class="plan-note">Includes 2-week free trial</p>
+            </div>
+            <div class="product-card">
+              <h3>Pro Lifetime</h3>
+              <p class="price">$49.99</p>
+              <ul class="plan-features">
+                <li>Everything in Pro Monthly</li>
+                <li>One-time purchase</li>
+                <li>Includes all future updates</li>
+              </ul>
+              <p class="plan-note">Pay once, own forever</p>
+            </div>
+          </div>
+
+          <h3 class="plans-group-heading">Add-On Packs</h3>
+          <p class="plans-group-sub">One-time purchases that extend Pro capabilities with specialized analysis tools.</p>
+          <div class="product-grid two-col">
+            <div class="product-card addon-card">
+              <h3>Storm Chaser Pack</h3>
+              <p class="price">$9.99</p>
+              <ul class="plan-features">
+                <li>Real-time lightning strike overlay</li>
+                <li>NWP model data overlay (HRRR, RAP, NAM, GFS)</li>
+                <li>Severe weather alert tones</li>
+                <li>Advanced storm tracking tools</li>
+              </ul>
+              <p class="plan-note">Requires active Pro subscription or Lifetime</p>
+            </div>
+            <div class="product-card addon-card">
+              <h3>ML Analysis Pack</h3>
+              <p class="price">$4.99</p>
+              <ul class="plan-features">
+                <li>CoreML storm cell classification</li>
+                <li>AI weather situation analysis</li>
+                <li>Threat assessment &amp; safety recommendations</li>
+                <li>On-device processing (no cloud required)</li>
+              </ul>
+              <p class="plan-note">Requires active Pro subscription or Lifetime</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="requirements">
+        <div class="section-inner">
+          <h2>System Requirements</h2>
+          <p class="section-lede">NEXRAD Analyst Pro is a native macOS application built with Swift, SwiftUI, and Metal.</p>
           <div class="status-list">
             <div class="status-item">
-              <strong>Distribution</strong>
-              <p>Mac App Store. Public support and privacy pages serve both App Store review and customer reference.</p>
+              <strong>Platform</strong>
+              <p>macOS 15 Sequoia or later</p>
             </div>
-            <div class="status-item pending">
-              <strong>Add-on Packs</strong>
-              <p>Storm Chaser Pack ($9.99) and ML Analysis Pack ($4.99) will be available as in-app purchases.</p>
+            <div class="status-item">
+              <strong>Hardware</strong>
+              <p>Apple silicon and Intel Macs with Metal-capable GPU</p>
+            </div>
+            <div class="status-item">
+              <strong>Distribution</strong>
+              <p>Mac App Store</p>
+            </div>
+            <div class="status-item">
+              <strong>Network</strong>
+              <p>Internet connection required for radar data retrieval</p>
             </div>
           </div>
         </div>
@@ -160,10 +255,11 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span>&copy; 2026 Free Range Labs. NEXRAD Analyst is not affiliated with the National Weather Service, NOAA, or Apple Inc.</span>
+        <span>&copy; 2026 Free Range Labs. NEXRAD Analyst Pro is not affiliated with the National Weather Service, NOAA, or Apple Inc.</span>
         <div class="footer-links">
           <a href="support.html">Support</a>
           <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
         </div>
       </div>
     </footer>

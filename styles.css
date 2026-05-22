@@ -55,6 +55,7 @@ a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(6, 10, 20, 0.88);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .nav {
@@ -386,20 +387,114 @@ h1 {
   font-size: 0.92rem;
 }
 
-/* ──── Product grid ──── */
+/* ──── Feature extras (below main grid) ──── */
+
+.feature-extras {
+  margin-top: 36px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.feature-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-extra {
+  padding: 16px;
+}
+
+.feature-extra strong {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.feature-extra p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ──── Product / plan grid ──── */
+
+.plans-group-heading {
+  font-size: 1.2rem;
+  color: var(--soft);
+  margin: 36px 0 4px;
+  letter-spacing: 0.02em;
+}
+
+.plans-group-sub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 4px;
+}
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
-  margin-top: 32px;
+  margin-top: 18px;
+}
+
+.product-grid.four-col {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.product-grid.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .product-card {
+  position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 22px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.product-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.product-card.featured {
+  border-color: rgba(0, 212, 170, 0.35);
+  background: linear-gradient(180deg, rgba(0, 212, 170, 0.08), rgba(0, 212, 170, 0.02));
+}
+
+.product-card.featured:hover {
+  border-color: rgba(0, 212, 170, 0.5);
+}
+
+.product-card.addon-card {
+  border-color: rgba(71, 167, 255, 0.2);
+  background: linear-gradient(180deg, rgba(71, 167, 255, 0.06), rgba(71, 167, 255, 0.02));
+}
+
+.product-card.addon-card:hover {
+  border-color: rgba(71, 167, 255, 0.35);
+}
+
+.card-badge {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  background: var(--accent-strong);
+  color: #041018;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.card-badge.savings {
+  background: var(--orange);
 }
 
 .product-card h3 {
@@ -410,17 +505,56 @@ h1 {
 .product-card .price {
   color: var(--accent);
   font-weight: 700;
-  font-size: 1.1rem;
-  margin: 0 0 10px;
+  font-size: 1.3rem;
+  margin: 0 0 14px;
 }
 
-.product-card p {
+.addon-card .price {
+  color: var(--blue);
+}
+
+.price-period {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.plan-features li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.plan-features li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.addon-card .plan-features li::before {
+  color: var(--blue);
+}
+
+.plan-note {
   margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  opacity: 0.8;
 }
 
-/* ──── Status/availability ──── */
+/* ──── Status / requirements ──── */
 
 .status-list {
   display: grid;
@@ -527,6 +661,56 @@ h1 {
   color: var(--orange);
 }
 
+/* ──── Keyboard shortcuts ──── */
+
+kbd {
+  display: inline-block;
+  padding: 2px 7px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Mono", "Menlo", monospace;
+  font-size: 0.82rem;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.shortcuts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.shortcut-group h3 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.shortcut-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shortcut-table td {
+  padding: 7px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shortcut-table td:first-child {
+  width: 140px;
+  white-space: nowrap;
+}
+
+.shortcut-table td:last-child {
+  color: var(--muted);
+}
+
 /* ──── Legal pages ──── */
 
 .legal-main {
@@ -556,6 +740,11 @@ h1 {
 
 .legal-section li {
   margin-bottom: 6px;
+}
+
+.legal-section em {
+  color: var(--muted);
+  font-style: italic;
 }
 
 /* ──── Footer ──── */
@@ -599,6 +788,12 @@ h1 {
 
 /* ──── Responsive ──── */
 
+@media (max-width: 960px) {
+  .product-grid.four-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 860px) {
   .nav {
     align-items: flex-start;
@@ -629,8 +824,26 @@ h1 {
   }
 
   .feature-grid,
-  .product-grid,
   .status-list {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-extra-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shortcuts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-grid.four-col,
+  .product-grid.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-extra-grid {
     grid-template-columns: 1fr;
   }
 }
