@@ -1,14 +1,14 @@
-# NEXRAD Analyst
+# NEXRAD Analyst Pro
 
-Public App Store support site for NEXRAD Analyst — a professional NEXRAD Level II weather radar analysis application for macOS.
+Public App Store support site for NEXRAD Analyst Pro, a professional NEXRAD Level II weather radar analysis application for macOS.
 
 This repository intentionally contains only public marketing, support, privacy-policy, and App Store-facing documentation. It does not contain app source code, internal planning documents, release artifacts, signing material, secrets, license-generation tools, or private App Store Connect configuration.
 
 ## Pages
 
-- **Marketing:** `index.html` — Product overview, features, and pricing
-- **Support:** `support.html` — Help, instructions, troubleshooting, and support contact
-- **Privacy Policy:** `privacy.html` — Privacy policy for App Store review and customers
+- **Marketing:** `index.html` - Product overview, target audiences, features, and pricing
+- **Support:** `support.html` - Help, instructions, troubleshooting, and support contact
+- **Privacy Policy:** `privacy.html` - Privacy policy for App Store review and customers
 
 ## Public URLs
 
@@ -23,4 +23,4 @@ This repository intentionally contains only public marketing, support, privacy-p
 
 ## About
 
-NEXRAD Analyst is developed by Free Range Labs. It is not affiliated with the National Weather Service, NOAA, or Apple Inc.
+NEXRAD Analyst Pro is developed by Free Range Labs. It is not affiliated with the National Weather Service, NOAA, or Apple Inc.
