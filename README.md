@@ -1,6 +1,6 @@
 # NEXRAD Analyst Pro
 
-Public App Store support site for NEXRAD Analyst Pro, a professional NEXRAD Level II weather radar analysis application for macOS.
+Public App Store support site for NEXRAD Analyst Pro, a professional NEXRAD Level II weather radar analysis application for Mac, iPhone, and Apple Watch.
 
 This repository intentionally contains only public marketing, support, privacy-policy, and App Store-facing documentation. It does not contain app source code, internal planning documents, release artifacts, signing material, secrets, license-generation tools, or private App Store Connect configuration.
 
@@ -18,8 +18,8 @@ This repository intentionally contains only public marketing, support, privacy-p
 
 ## Support
 
-- **Primary:** [Open a GitHub Issue](https://github.com/noktirnal42/NEXRADAnalyst/issues/new?template=support_request.md)
-- **Email (last resort):** FreeRangeLabs@drumnbus.com
+- **Email:** FreeRangeLabs@drumnbus.com
+- **Public issue tracker:** [Open a GitHub Issue](https://github.com/noktirnal42/NEXRADAnalyst/issues/new?template=support_request.md)
 
 ## About
 
