@@ -847,3 +847,9 @@ body::before { background: radial-gradient(ellipse at 50% 5%, rgba(35,146,143,.1
 }
 section[id] { scroll-margin-top:90px; }
 @media(max-width:860px) { section[id] { scroll-margin-top:125px; } }
+
+/* Keep intrinsic image sizes from expanding the hero's grid track. */
+.product-hero { display:block; width:100%; }
+.product-intro, .device-layout, .device-gallery, .companion-shots { min-width:0; max-width:100%; }
+.workstation-shot a, .device-gallery a { display:block; min-width:0; max-width:100%; }
+img { max-width:100%; }
