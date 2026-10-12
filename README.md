@@ -24,3 +24,11 @@ This repository intentionally contains only public marketing, support, privacy-p
 ## About
 
 NEXRAD Analyst Pro is developed by Free Range Labs. It is not affiliated with the National Weather Service, NOAA, or Apple Inc.
+
+## See the app
+
+[Explore the website](https://noktirnal42.github.io/NEXRADAnalyst/) · [View on the App Store](https://apps.apple.com/app/id6772084538)
+
+![NEXRAD Analyst Pro Mac radar workspace](assets/mac-workstation.png)
+
+Website imagery uses actual app captures. The Mac screenshot shows an archived radar scan. The iPad screenshot shows analysis controls with a schematic map preview.

@@ -233,161 +233,6 @@ h1 {
   font-size: 0.84rem;
 }
 
-.storm-console {
-  border: 1px solid var(--line-strong);
-  border-radius: 14px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(22, 29, 41, 0.96), rgba(10, 14, 21, 0.96));
-  box-shadow: var(--shadow);
-}
-
-.console-topbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 13px 15px;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-family: "SF Mono", Menlo, monospace;
-  font-size: 0.78rem;
-}
-
-.console-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 18px;
-  padding: 22px;
-}
-
-.radar-visual {
-  position: relative;
-  width: min(100%, 360px);
-  aspect-ratio: 1;
-  justify-self: center;
-  border-radius: 50%;
-  background:
-    conic-gradient(from 20deg, rgba(33, 208, 143, 0.1), rgba(84, 199, 255, 0.06), rgba(255, 77, 100, 0.08), rgba(33, 208, 143, 0.1));
-}
-
-.radar-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgba(84, 199, 255, 0.18);
-}
-
-.radar-ring-1 { inset: 0; }
-.radar-ring-2 { inset: 15%; }
-.radar-ring-3 { inset: 30%; }
-.radar-ring-4 { inset: 45%; }
-
-.radar-sweep {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, transparent 0deg, rgba(33, 208, 143, 0.2) 18deg, rgba(33, 208, 143, 0.05) 58deg, transparent 86deg);
-  animation: sweep 6s linear infinite;
-}
-
-@keyframes sweep {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.radar-crosshair {
-  position: absolute;
-  inset: 0;
-}
-
-.radar-crosshair::before,
-.radar-crosshair::after {
-  content: "";
-  position: absolute;
-  background: rgba(84, 199, 255, 0.12);
-}
-
-.radar-crosshair::before {
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-}
-
-.radar-crosshair::after {
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-}
-
-.radar-cell {
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(0.2px);
-}
-
-.cell-core {
-  top: 27%;
-  left: 57%;
-  width: 62px;
-  height: 38px;
-  background: linear-gradient(90deg, var(--red), var(--amber));
-  transform: rotate(-22deg);
-  box-shadow: 0 0 30px rgba(255, 77, 100, 0.28);
-}
-
-.cell-wind {
-  top: 43%;
-  left: 28%;
-  width: 72px;
-  height: 34px;
-  background: linear-gradient(90deg, var(--cyan), var(--green));
-  transform: rotate(18deg);
-}
-
-.cell-hail {
-  right: 20%;
-  bottom: 25%;
-  width: 48px;
-  height: 28px;
-  background: linear-gradient(90deg, var(--purple), var(--cyan));
-  transform: rotate(28deg);
-}
-
-.radar-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 22px rgba(33, 208, 143, 0.58);
-  transform: translate(-50%, -50%);
-}
-
-.console-inspector {
-  display: grid;
-  gap: 10px;
-}
-
-.console-inspector div {
-  display: grid;
-  gap: 2px;
-  padding: 11px 12px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.045);
-}
-
-.console-inspector strong {
-  font-size: 0.86rem;
-}
-
-.console-inspector span {
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
 .section {
   position: relative;
   z-index: 1;
@@ -906,9 +751,6 @@ kbd {
     padding: 50px 0 58px;
   }
 
-  .storm-console {
-    order: -1;
-  }
 
   .feature-grid,
   .workflow-strip,
@@ -936,15 +778,72 @@ kbd {
     padding: 62px 0;
   }
 
-  .console-body {
-    padding: 16px;
-  }
-
-  .radar-visual {
-    width: min(100%, 280px);
-  }
 
   .addon-card {
     flex-direction: column;
   }
 }
+
+/* Product photography and the radar palette carry the brand. */
+body { background: #080e13; }
+body::before { background: radial-gradient(ellipse at 50% 5%, rgba(35,146,143,.13), transparent 55%); }
+.product-hero { min-height: auto; overflow: hidden; }
+.product-intro { text-align: center; padding: 38px 0 28px; }
+.product-wordmark { display:flex; align-items:center; justify-content:center; gap:16px; font-size:1.25rem; font-weight:650; }
+.product-wordmark img { border-radius:18px; box-shadow:0 8px 28px #0008; }
+.eyebrow { font-size:.75rem; letter-spacing:.18em; color:#62dfc4; font-weight:750; margin:22px 0 16px; }
+.product-intro h1 { font-size:clamp(2.5rem,5vw,4.1rem); line-height:1.08; letter-spacing:-.045em; margin-bottom:24px; }
+.product-intro h1 span { color:#8bacae; }
+.product-intro .hero-copy { max-width:680px; margin:0 auto 26px; color:#b4c5cc; }
+.product-intro .cta-row { justify-content:center; }
+.primary-button { background:#57e5be; color:#071914; border-radius:100px; gap:16px; }
+.primary-button:hover { background:#8af3d2; color:#071914; }
+.secondary-button { border-radius:100px; gap:16px; }
+.availability,.capture-note { font-size:.8rem; color:#9dafbb; }
+.availability { margin:16px 0 26px; }
+.workstation-shot { margin:0; }
+.workstation-shot img { display:block; width:100%; height:auto; border-radius:18px; box-shadow:0 24px 70px #0008; }
+.workstation-shot figcaption { display:flex; justify-content:space-between; gap:16px; padding:18px 5px; color:#a1b8bf; font-size:.75rem; }
+.workstation-shot figcaption span:first-child { letter-spacing:.13em; color:#65d9ba; }
+.device-section { background:linear-gradient(115deg,#0b191e,#0c131b); }
+.device-layout { display:grid; grid-template-columns:.85fr 1.15fr; gap:80px; align-items:center; }
+.device-copy h2 { font-size:clamp(2.1rem,4vw,3.5rem); line-height:1.1; letter-spacing:-.035em; }
+.device-copy .section-lede { max-width:440px; }
+.text-link { text-decoration:none; font-weight:650; }
+.capture-note { max-width:330px; margin-top:26px; }
+.device-gallery { display:flex; gap:28px; align-items:center; justify-content:center; min-width:0; }
+.device-gallery figure { margin:0; min-width:0; }
+.device-gallery img { display:block; width:100%; height:auto; box-shadow:0 20px 45px #0006; border:5px solid #26353d; }
+.phone-shot { width:46%; max-width:240px; }
+.phone-shot img { border-radius:30px; }
+.device-gallery figcaption { text-align:center; color:#9db4c0; font-size:.75rem; margin-top:12px; }
+.companion-shots { width:43%; display:flex; flex-direction:column; align-items:center; gap:28px; }
+.tablet-shot img { border-radius:18px; }
+.watch-shot { width:60%; max-width:140px; }
+.watch-shot img { border-radius:26px; border-width:6px; }
+.brand img { width:34px; height:34px; border-radius:9px; }
+.feature-icon { color:#62dfc4; background:#10282c; border:1px solid #24514f; }
+.section h2 { letter-spacing:-.03em; }
+:focus-visible { outline:3px solid #62dfc4; outline-offset:5px; }
+.skip-link { position:absolute; top:-100px; left:20px; z-index:100; background:#57e5be; color:#071914; padding:12px 20px; }
+.skip-link:focus { top:10px; }
+@media(max-width:860px) {
+ .device-layout { grid-template-columns:1fr; gap:36px; }
+ .device-copy { text-align:center; }
+ .device-copy .section-lede,.capture-note { margin-left:auto; margin-right:auto; }
+ .device-gallery { max-width:530px; margin:0 auto; }
+ .product-intro { padding-top:40px; }
+}
+@media(max-width:640px) {
+ .product-wordmark { font-size:1rem; gap:12px; }
+ .product-wordmark img { width:56px; height:56px; }
+ .product-intro h1 { font-size:clamp(2rem,8.6vw,3rem); }
+ .product-intro .hero-copy { font-size:1rem; }
+ .workstation-shot figcaption { flex-direction:column; gap:4px; text-align:left; }
+ .device-gallery { gap:20px; }
+ .phone-shot img { border-radius:22px; border-width:3px; }
+ .nav-links { flex-wrap:wrap; justify-content:flex-start; column-gap:18px; }
+ .brand { white-space:normal; }
+}
+section[id] { scroll-margin-top:90px; }
+@media(max-width:860px) { section[id] { scroll-margin-top:125px; } }
